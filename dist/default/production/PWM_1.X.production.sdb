@@ -1,0 +1,406 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"2 D:\5\Sistemi\PWM_1.X\ADC.h
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"20
+[v _ADC_Conv ADC_Conv `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"13 D:\5\Sistemi\PWM_1.X\LCD_SP.h
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+"26
+[v _spi_port spi_port `(v  1 e 1 0 ]
+"37
+[v _Lcd_SP_port Lcd_SP_port `(v  1 e 1 0 ]
+"49
+[v _Lcd_SP_Cmd Lcd_SP_Cmd `(v  1 e 1 0 ]
+"60
+[v _Lcd_SP_Clear Lcd_SP_Clear `(v  1 e 1 0 ]
+"66
+[v _Lcd_SP_Set_Cursor Lcd_SP_Set_Cursor `(v  1 e 1 0 ]
+"78
+[v _Lcd_SP_Init Lcd_SP_Init `(v  1 e 1 0 ]
+"107
+[v _Lcd_SP_Write_Char Lcd_SP_Write_Char `(v  1 e 1 0 ]
+"116
+[v _Lcd_SP_Write_String Lcd_SP_Write_String `(v  1 e 1 0 ]
+"151
+[v _Lcd_SP_Write_Val Lcd_SP_Write_Val `(v  1 e 1 0 ]
+"27 D:\5\Sistemi\PWM_1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"7 D:\5\Sistemi\PWM_1.X\PWM_1.h
+[v _PWM1_Duty PWM1_Duty `(v  1 e 1 0 ]
+"12
+[v _PWM2_Duty PWM2_Duty `(v  1 e 1 0 ]
+"22
+[v _PWM_Duty PWM_Duty `(v  1 e 1 0 ]
+"27
+[v _PWM1_on PWM1_on `(v  1 e 1 0 ]
+"42
+[v _PWM2_on PWM2_on `(v  1 e 1 0 ]
+"48
+[v _PWM2_off PWM2_off `(v  1 e 1 0 ]
+"54
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S236 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"181
+[u S245 . 1 `S236 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES245  1 e 1 @5 ]
+"226
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"288
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"350
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"412
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+[s S89 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"791
+[s S93 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S101 . 1 `S89 1 . 1 0 `S93 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES101  1 e 1 @18 ]
+"841
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"848
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S120 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"868
+[s S126 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S131 . 1 `S120 1 . 1 0 `S126 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES131  1 e 1 @20 ]
+"925
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"939
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+[s S19 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+"966
+[s S23 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[s S32 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CCP1Y 1 0 :1:4 
+`uc 1 CCP1X 1 0 :1:5 
+]
+[u S36 . 1 `S19 1 . 1 0 `S23 1 . 1 0 `S32 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES36  1 e 1 @23 ]
+"1152
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1166
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @29 ]
+[s S59 . 1 `uc 1 CCP2M 1 0 :4:0 
+`uc 1 DC2B0 1 0 :1:4 
+`uc 1 DC2B1 1 0 :1:5 
+]
+"1186
+[s S63 . 1 `uc 1 CCP2M0 1 0 :1:0 
+`uc 1 CCP2M1 1 0 :1:1 
+`uc 1 CCP2M2 1 0 :1:2 
+`uc 1 CCP2M3 1 0 :1:3 
+`uc 1 CCP2Y 1 0 :1:4 
+`uc 1 CCP2X 1 0 :1:5 
+]
+[u S70 . 1 `S59 1 . 1 0 `S63 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES70  1 e 1 @29 ]
+"1236
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1243
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S269 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1274
+[s S274 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S283 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S286 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S289 . 1 `S269 1 . 1 0 `S274 1 . 1 0 `S283 1 . 1 0 `S286 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES289  1 e 1 @31 ]
+"1414
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1476
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1538
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1600
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1662
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+"1977
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"2039
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2175
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S147 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2229
+[s S156 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S161 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S167 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S172 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S177 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S182 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S187 . 1 `S147 1 . 1 0 `S156 1 . 1 0 `S161 1 . 1 0 `S167 1 . 1 0 `S172 1 . 1 0 `S177 1 . 1 0 `S182 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES187  1 e 1 @148 ]
+"2968
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2975
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3385
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3906
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"3928
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"27 D:\5\Sistemi\PWM_1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"64
+[v main@val val `ui  1 a 2 7 ]
+"48
+[v main@j j `ui  1 a 2 5 ]
+[v main@i i `ui  1 a 2 3 ]
+"104
+} 0
+"54 D:\5\Sistemi\PWM_1.X\PWM_1.h
+[v _PWM_Init PWM_Init `(v  1 e 1 0 ]
+{
+[v PWM_Init@prescTMR2 prescTMR2 `i  1 p 2 8 ]
+"81
+} 0
+"22
+[v _PWM_Duty PWM_Duty `(v  1 e 1 0 ]
+{
+[v PWM_Duty@duty1 duty1 `ui  1 p 2 4 ]
+[v PWM_Duty@duty2 duty2 `ui  1 p 2 6 ]
+"25
+} 0
+"12
+[v _PWM2_Duty PWM2_Duty `(v  1 e 1 0 ]
+{
+[v PWM2_Duty@duty2 duty2 `ui  1 p 2 0 ]
+"20
+} 0
+"7
+[v _PWM1_Duty PWM1_Duty `(v  1 e 1 0 ]
+{
+[v PWM1_Duty@duty1 duty1 `ui  1 p 2 0 ]
+"11
+} 0
+"42
+[v _PWM2_on PWM2_on `(v  1 e 1 0 ]
+{
+"46
+} 0
+"27
+[v _PWM1_on PWM1_on `(v  1 e 1 0 ]
+{
+"34
+} 0
+"48
+[v _PWM2_off PWM2_off `(v  1 e 1 0 ]
+{
+"52
+} 0
+"151 D:\5\Sistemi\PWM_1.X\LCD_SP.h
+[v _Lcd_SP_Write_Val Lcd_SP_Write_Val `(v  1 e 1 0 ]
+{
+"153
+[v Lcd_SP_Write_Val@cent cent `uc  1 a 1 10 ]
+[v Lcd_SP_Write_Val@dec dec `uc  1 a 1 9 ]
+[v Lcd_SP_Write_Val@uni uni `uc  1 a 1 8 ]
+"151
+[v Lcd_SP_Write_Val@val val `i  1 p 2 5 ]
+"179
+} 0
+"116
+[v _Lcd_SP_Write_String Lcd_SP_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_SP_Write_String@b b `*.24uc  1 a 1 wreg ]
+"118
+[v Lcd_SP_Write_String@i i `i  1 a 2 5 ]
+"116
+[v Lcd_SP_Write_String@b b `*.24uc  1 a 1 wreg ]
+"119
+[v Lcd_SP_Write_String@b b `*.24uc  1 a 1 7 ]
+"121
+} 0
+"107
+[v _Lcd_SP_Write_Char Lcd_SP_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_SP_Write_Char@caratt caratt `uc  1 a 1 wreg ]
+[v Lcd_SP_Write_Char@caratt caratt `uc  1 a 1 wreg ]
+"109
+[v Lcd_SP_Write_Char@caratt caratt `uc  1 a 1 4 ]
+"113
+} 0
+"66
+[v _Lcd_SP_Set_Cursor Lcd_SP_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_SP_Set_Cursor@riga riga `uc  1 a 1 wreg ]
+"68
+[v Lcd_SP_Set_Cursor@pos pos `uc  1 a 1 10 ]
+"66
+[v Lcd_SP_Set_Cursor@riga riga `uc  1 a 1 wreg ]
+[v Lcd_SP_Set_Cursor@colonna colonna `uc  1 p 1 5 ]
+"70
+[v Lcd_SP_Set_Cursor@riga riga `uc  1 a 1 11 ]
+"75
+} 0
+"78
+[v _Lcd_SP_Init Lcd_SP_Init `(v  1 e 1 0 ]
+{
+"105
+} 0
+"13
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+{
+"24
+} 0
+"60
+[v _Lcd_SP_Clear Lcd_SP_Clear `(v  1 e 1 0 ]
+{
+"64
+} 0
+"49
+[v _Lcd_SP_Cmd Lcd_SP_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_SP_Cmd@cmd cmd `uc  1 a 1 wreg ]
+[v Lcd_SP_Cmd@cmd cmd `uc  1 a 1 wreg ]
+"51
+[v Lcd_SP_Cmd@cmd cmd `uc  1 a 1 4 ]
+"55
+} 0
+"37
+[v _Lcd_SP_port Lcd_SP_port `(v  1 e 1 0 ]
+{
+[v Lcd_SP_port@reg reg `uc  1 a 1 wreg ]
+[v Lcd_SP_port@reg reg `uc  1 a 1 wreg ]
+[v Lcd_SP_port@val val `uc  1 p 1 1 ]
+"39
+[v Lcd_SP_port@reg reg `uc  1 a 1 2 ]
+"46
+} 0
+"26
+[v _spi_port spi_port `(v  1 e 1 0 ]
+{
+[v spi_port@dato dato `uc  1 a 1 wreg ]
+[v spi_port@dato dato `uc  1 a 1 wreg ]
+"28
+[v spi_port@dato dato `uc  1 a 1 0 ]
+"35
+} 0
+"2 D:\5\Sistemi\PWM_1.X\ADC.h
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"18
+} 0
+"20
+[v _ADC_Conv ADC_Conv `(i  1 e 2 0 ]
+{
+"27
+} 0
